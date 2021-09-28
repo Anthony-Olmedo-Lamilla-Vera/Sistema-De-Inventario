@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Sistema-De-Inventario/static/css/main.ef2ca4a9.chunk.css",
-    "main.js": "/Sistema-De-Inventario/static/js/main.cb4d8229.chunk.js",
-    "main.js.map": "/Sistema-De-Inventario/static/js/main.cb4d8229.chunk.js.map",
+    "main.js": "/Sistema-De-Inventario/static/js/main.3607d2f9.chunk.js",
+    "main.js.map": "/Sistema-De-Inventario/static/js/main.3607d2f9.chunk.js.map",
     "runtime-main.js": "/Sistema-De-Inventario/static/js/runtime-main.d8b42ff4.js",
     "runtime-main.js.map": "/Sistema-De-Inventario/static/js/runtime-main.d8b42ff4.js.map",
     "static/js/2.69fe0bf0.chunk.js": "/Sistema-De-Inventario/static/js/2.69fe0bf0.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d8b42ff4.js",
     "static/js/2.69fe0bf0.chunk.js",
     "static/css/main.ef2ca4a9.chunk.css",
-    "static/js/main.cb4d8229.chunk.js"
+    "static/js/main.3607d2f9.chunk.js"
   ]
 }
