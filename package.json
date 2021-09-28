@@ -2,7 +2,7 @@
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://antocraxx.github.io/Sistema-De-Inventario/",
+  "homepage": "http://Antocraxx.github.io/Sistema-De-Inventario",
   "dependencies": {
     "@mui/material": "^5.0.1",
     "@testing-library/jest-dom": "^5.11.4",
