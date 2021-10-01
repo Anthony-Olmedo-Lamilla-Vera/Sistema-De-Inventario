@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter, Router, Route, Switch } from "react-router-dom";
 import Header from "../Components/Header";
+import Spinner from "../Components/Spinner";
 import ContextProduct from "../Context/ContextProduct";
 import { Ruta } from "../VariablesEntorno";
 import Inventario from "./Inventario";
@@ -12,7 +13,9 @@ function Index() {
         <Header />
         <Switch>
           <Route path={Ruta + "/"}>
-            <Inventario />
+            <Suspense fallback={<Spinner />}>
+              <Inventario />
+            </Suspense>
           </Route>
         </Switch>
       </ContextProduct>

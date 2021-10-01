@@ -40,7 +40,11 @@ function Tbody(props) {
         <td>{props.descripcion}</td>
         <td>$ {props.precio}</td>
         <td>
-          <img src={props.img} class="img-fluid img-thumbnail avatar" />
+          <img
+            lazy="loading"
+            src={props.img}
+            class="img-fluid img-thumbnail avatar"
+          />
         </td>
         <td>
           <button
