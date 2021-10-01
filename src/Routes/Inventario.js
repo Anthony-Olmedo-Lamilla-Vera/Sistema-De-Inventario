@@ -86,7 +86,7 @@ const Inventario = () => {
       <a
         type="button"
         href="#sectionProducts"
-        class="verProducts btn btn-primary"
+        className="verProducts btn btn-primary"
       >
         Ver Productos en Lista
       </a>
@@ -129,14 +129,14 @@ const Inventario = () => {
               onChanges={changeCategoria}
             />
 
-            <div class="mb-3">
-              <label for="formFile" className="form-label">
+            <div className="mb-3">
+              <label htmlFor="formFile" className="form-label">
                 Seleccione una Imagen
               </label>
               <input
                 name="image"
                 id="form-control"
-                class="form-control"
+                className="form-control"
                 onChange={(e) => Onchange(e)}
                 type="file"
               />
@@ -150,7 +150,7 @@ const Inventario = () => {
       </section>
       <section id="sectionProducts">
         <Tabla />
-        <a type="button" href="#Form" class="verProducts btn btn-primary">
+        <a type="button" href="#Form" className="verProducts btn btn-primary">
           Formulario de Productos
         </a>
       </section>

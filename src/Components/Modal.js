@@ -83,28 +83,28 @@ const Modal = () => {
 
   return (
     <div
-      class="modal fade"
+      className="modal fade"
       id="staticBackdrop"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">
+      <div className="modal-dialog">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title" id="staticBackdropLabel">
               Editar Producto
             </h5>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div className="modal-body">
             <form className="column  row g-1  needs-validation shadow p-3 mb-5 bg-body rounded">
               <Form
                 type="text"
@@ -143,15 +143,19 @@ const Modal = () => {
               />
             </form>
           </div>
-          <div class="modal-footer">
+          <div className="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" onClick={EditProduct} class="btn btn-primary">
+            <button
+              type="button"
+              onClick={EditProduct}
+              className="btn btn-primary"
+            >
               Editar Producto
             </button>
           </div>

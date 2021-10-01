@@ -2,19 +2,19 @@ import React from "react";
 
 const Form = (props) => {
   return (
-    <div class="col-md-0 ">
-      <label for="validationCustom01" class="form-label">
+    <div className="col-md-0 ">
+      <label htmlFor="validationCustom01" className="form-label">
         {props.name}
       </label>
       <input
         type={props.type}
-        class="form-control"
+        className="form-control"
         id="validationCustom01"
         value={props.value}
         onChange={props.onChange}
         required
       />
-      <div class="valid-feedback">Looks good!</div>
+      <div className="valid-feedback">Looks good!</div>
     </div>
   );
 };

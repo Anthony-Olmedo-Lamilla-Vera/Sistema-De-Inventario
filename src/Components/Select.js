@@ -3,17 +3,21 @@ import React from "react";
 function Select(props) {
   return (
     <div>
-      <label for="validationCustom01" class="form-label">
+      <label htmlFor="validationCustom01" className="form-label">
         Categoria
       </label>
       <select
-        class="form-select"
+        className="form-select"
         aria-label="Default select example"
         value={props.select}
         onChange={props.onChanges}
       >
-        {props.options.map((x) => {
-          return <option value={x.value}>{x.value}</option>;
+        {props.options.map((x, key) => {
+          return (
+            <option key={key} value={x.value}>
+              {x.value}
+            </option>
+          );
         })}
       </select>
     </div>

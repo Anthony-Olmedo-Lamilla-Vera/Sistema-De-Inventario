@@ -36,24 +36,23 @@ const Tabla = (props) => {
           <th scope="col">Image </th>
         </tr>
       </thead>
-      {ListProducts === 0 ? (
-        <h2>Producto Vacios </h2>
-      ) : (
-        ListProducts.map((x) => {
-          return (
-            <Tbody
-              nombreProduct={x.Nombre}
-              marca={x.Marca}
-              cantidad={x.Cantidad}
-              precio={x.Precio}
-              id={x._id}
-              categoria={x.Categoria}
-              descripcion={x.Descripcion}
-              img={x.Img}
-            />
-          );
-        })
-      )}
+      {ListProducts
+        ? ListProducts.map((x) => {
+            return (
+              <Tbody
+                key={x._id}
+                nombreProduct={x.Nombre}
+                marca={x.Marca}
+                cantidad={x.Cantidad}
+                precio={x.Precio}
+                id={x._id}
+                categoria={x.Categoria}
+                descripcion={x.Descripcion}
+                img={x.Img}
+              />
+            );
+          })
+        : ""}
     </table>
   );
 };

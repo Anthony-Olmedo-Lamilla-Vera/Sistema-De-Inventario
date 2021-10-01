@@ -14,29 +14,29 @@ export default function Header() {
     }
   }
   return (
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" id="Form">
+    <nav className="navbar navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" id="Form">
           <img
             src="https://w1.pngwing.com/pngs/213/89/png-transparent-warehouse-inventory-inventory-management-software-inventory-control-warehouse-management-system-taking-logo-logistics.png"
             alt=""
             width="30"
             height="24"
-            class="d-inline-block align-text-top"
+            className="d-inline-block align-text-top"
           />
           Inventario Productos
         </a>
-        <form onSubmit={SearchProduct} class="d-flex">
+        <form onSubmit={SearchProduct} className="d-flex">
           <input
             value={keyword}
             onChange={(e) => setkeyword(e.target.value)}
-            class="form-control me-2"
+            className="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
           <a
-            class="btn btn-outline-success"
+            className="btn btn-outline-success"
             onClick={SearchProduct}
             type="submit"
             href="#sectionProducts"

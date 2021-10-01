@@ -43,7 +43,7 @@ function Tbody(props) {
           <img
             lazy="loading"
             src={props.img}
-            class="img-fluid img-thumbnail avatar"
+            className="img-fluid img-thumbnail avatar"
           />
         </td>
         <td>

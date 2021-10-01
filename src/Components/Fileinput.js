@@ -8,13 +8,13 @@ const Fileinput = () => {
   };
 
   return (
-    <div class="mb-3">
-      <label for="formFile" class="form-label">
+    <div className="mb-3">
+      <label htmlFor="formFile" className="form-label">
         Seleccione una Imagen
       </label>
       <input
         id="form-control"
-        class="form-control"
+        className="form-control"
         value={Value}
         onChange={Onchange}
         type="file"
