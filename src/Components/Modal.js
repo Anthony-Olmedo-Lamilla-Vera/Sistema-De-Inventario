@@ -15,8 +15,6 @@ const Modal = () => {
 
   const [Marca, setMarca] = useState("");
   useEffect(() => {
-    console.log(ProductId.Nombre);
-    console.log(ProductId._id);
     setNombreProduct(ProductId.Nombre);
     setCantidad(ProductId.Cantidad);
     setPrecio(ProductId.Precio);

@@ -7,6 +7,7 @@ const Form = (props) => {
         {props.name}
       </label>
       <input
+        placeholder={props.placeholder}
         type={props.type}
         className="form-control"
         id="validationCustom01"

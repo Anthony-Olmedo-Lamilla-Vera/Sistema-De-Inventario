@@ -21,3 +21,72 @@ td button {
   border-width: 4px;
   border-color: rgb(53, 45, 172);
 }
+.img-perfil {
+  width: 1.5625rem;
+  height: 1.25rem;
+}
+.container-Perfil {
+  display: flex;
+  justify-content: center;
+}
+.drop {
+  margin-left: 20px;
+}
+.containerPerfil {
+  min-width: 200px;
+  width: 50%;
+  align-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.containerPerfil header img {
+  min-width: 50px;
+  max-width: 140px;
+}
+.btn-plan {
+  text-align: center;
+  align-items: center;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 0.3125rem;
+  background-color: #ffd700;
+  border-style: none;
+  border: #b69b14f3 3px solid;
+  text-decoration: none;
+}
+.main-beneficios {
+  margin: auto;
+}
+
+.key {
+  text-align: center;
+
+  font-size: 1.5625rem;
+}
+.buttondesplegable {
+  padding: 0.125rem 0.25rem;
+  border-radius: 3.125rem;
+}
+.buttondesplegable img {
+  border-radius: 3.125rem;
+
+  width: 2.8125rem;
+  height: 2.5rem;
+}
+.tipo {
+  margin-left: 15px;
+  background-color: red;
+  padding: 0.5rem 1.875rem;
+  color: white;
+  border-top: #000 0.5rem solid;
+}
+.titulo-plan {
+  font-size: 1.25rem;
+}
+.header-pago h2 {
+  margin-bottom: 2.1875rem;
+}

@@ -4,24 +4,8 @@ import ContextProduct, { contextProduct } from "../Context/ContextProduct";
 import { Url } from "../VariablesEntorno";
 import Tbody from "./Tbody";
 const Tabla = (props) => {
-  const { ListProducts, setListProducts } = useContext(contextProduct);
+  const { DatesUser, setDatesUser } = useContext(contextProduct);
 
-  useEffect(() => {
-    GetProducts();
-  }, []);
-
-  async function GetProducts() {
-    let listProduct = [];
-    await axios
-      .get(Url + "/get-Products")
-      .then((result) => {
-        listProduct.push(result.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-    setListProducts(listProduct[0]);
-  }
   return (
     <table className="table">
       <thead>
@@ -36,8 +20,9 @@ const Tabla = (props) => {
           <th scope="col">Image </th>
         </tr>
       </thead>
-      {ListProducts
-        ? ListProducts.map((x) => {
+      {DatesUser[0]
+        ? DatesUser[0].ListProducts.map((x) => {
+            console.log(x);
             return (
               <Tbody
                 key={x._id}
